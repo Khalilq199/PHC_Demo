@@ -46,17 +46,6 @@ Browser checks use an existing Microsoft Edge installation through Playwright. T
 
 `test:production` builds first and runs the same suite against a fresh production preview on port 4173; stop any existing preview on that port before running it. The standard `npm test` uses the dev server on port 5173. On a machine without Edge, install it with `npx playwright install msedge` or configure another Playwright browser in `playwright.config.ts`.
 
-## Presentation path
-
-1. Start at Today with Patient selected.
-2. Open Blood pressure; compare the recorded baseline with the recent summaries and next action.
-3. Open **Why am I seeing this?**, then the home log's **View source**.
-4. Return to evidence or close the drawer; switch to Clinician for counts, dates, and supporting-record drill-down.
-5. Open Health over time and select Vitamin D to show supplementation followed by later results.
-6. Return to Patient; the topic remains selected. Browser Back/Forward and refresh preserve the encoded route, lens, and filter.
-
-To reset the demo, open `/#today` without a lens query. On short displays, scroll inside the drawer; Escape and the close button return to its opener.
-
 ## Prototype scope
 
 Today is the entry screen. Blood pressure opens its detail view; Vitamin D and Thyroid open their filtered history. Patient/Clinician switching preserves the current page. Clinician adds observation counts, longitudinal context, workflow questions, and supporting-record drill-down. Evidence and source views share one dismissible drawer.
