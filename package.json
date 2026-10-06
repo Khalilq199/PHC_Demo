@@ -1,0 +1,27 @@
+{
+  "name": "phc-patient-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "playwright test",
+    "test:production": "npm run build && playwright test --config playwright.production.config.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/public-sans": "^5.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  }
+}

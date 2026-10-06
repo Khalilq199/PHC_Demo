@@ -218,3 +218,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI/Codex workflow material and internal demo notes
+steps/
+.impeccable/
+demo_notes/
+
+# Local environment files (keep the shareable template visible)
+.env
+.env.*
+!.env.example
+
+# Frontend caches and coverage output
+.vite/
+.cache/
+coverage/
+.eslintcache
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Frontend dependencies and local verification artifacts
+node_modules/
+test-results/
+playwright-report/
